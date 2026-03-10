@@ -215,7 +215,7 @@ const NavBar: React.FC<NavBarProps> = ({ className, onHomeLinkClick, onExpandCha
         <DropdownMenu>
           <DropdownMenuTrigger className="flex items-center gap-2 outline-none w-full px-2 py-2 rounded-md hover:bg-blue-800/30">
             <Avatar className="h-8 w-8 border-2 border-blue-500/30 ring-2 ring-blue-400/20">
-              <AvatarImage src="https://github.com/shadcn.png" />
+              <AvatarImage src="https://github.com/jfrog.png" />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
             {expanded && <span className="text-blue-100/80">Profile</span>}
