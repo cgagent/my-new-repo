@@ -31,4 +31,5 @@ jobs:
         with:
           context: .
           push: true
+          build-args: BUILD_TIMESTAMP=${{ github.run_id }}-${{ github.run_number }}
           tags: cga.jfrog.io/docker/${{ github.repository }}:${{ env.IMAGE_VERSION_MAJOR }}.${{ env.IMAGE_VERSION_MINOR }}.${{ github.run_number }}

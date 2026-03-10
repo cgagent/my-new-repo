@@ -14,6 +14,8 @@ RUN npm ci
 COPY . .
 
 # Build the application
+ARG BUILD_TIMESTAMP
+ENV VITE_BUILD_ID=${BUILD_TIMESTAMP}
 RUN npm run build
 
 # Production stage
